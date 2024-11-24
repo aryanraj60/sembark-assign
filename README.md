@@ -23,4 +23,4 @@
 
 - React JS with Vite
 - TypeScript
-- Jest for testing
+- Cypress for testing
