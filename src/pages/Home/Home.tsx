@@ -1,11 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  Product,
-  FooterBanner,
-  HeroBanner,
-  Loader,
-  SelectInput,
-} from "../../components";
+import { Product, Loader, SelectInput } from "../../components";
 import { AiFillStar } from "react-icons/ai";
 import author1 from "../../assets/reviews/author1.jpeg";
 import author2 from "../../assets/reviews/author2.jpeg";

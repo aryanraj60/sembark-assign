@@ -58,16 +58,16 @@ const ProductDetails: React.FC = () => {
     }
   }, [productId]);
 
-  if (!product) {
-    return null;
-  }
-
   if (loading) {
     return (
       <div className="h-80 flex items-center justify-center">
         <Loader width="w-14" height="h-14" />
       </div>
     );
+  }
+
+  if (!product) {
+    return null;
   }
 
   return (

@@ -1,7 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 import { toast } from "react-hot-toast";
 
-// Define types for the product and context
 interface ProductType {
   id: string;
   image: string;
@@ -28,7 +27,6 @@ type StateContextType = {
   setCartItems: React.Dispatch<React.SetStateAction<ProductType[]>>;
 };
 
-// Create the context
 const Context = createContext<StateContextType | undefined>(undefined);
 
 type StateContextProviderProps = {
@@ -166,7 +164,6 @@ const StateContext: React.FC<StateContextProviderProps> = ({ children }) => {
   );
 };
 
-// Custom hook to use the StateContext
 export const useStateContext = () => {
   const context = useContext(Context);
   if (!context) {

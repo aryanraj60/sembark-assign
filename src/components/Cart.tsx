@@ -80,7 +80,7 @@ const Cart: React.FC = () => {
                     alt={item.title}
                   />
                 )}
-                <div className="item-desc">
+                <div className="item-desc max-w-full">
                   <div className="flexy top">
                     <h5 className="truncate">{item.title}</h5>
                     <h4>${item.price}</h4>
